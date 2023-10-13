@@ -1,0 +1,381 @@
+body {
+  user-select: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+background-image: url(images/Desktop\ -\ 2\ \(1\).png);    
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+/* .navbar */
+.navbar {
+  display: none;
+
+  z-index: 100;
+   top: -9%;
+    position: absolute;
+    left: 20%;
+    margin: auto;
+    width: 60%;
+    height: 12%; 
+    background-color: #589A8D;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s;
+    padding-bottom: 5px;
+}
+.nicons{
+  margin: auto;
+}
+.navbar:hover{
+  top: 0;
+  transition: all 0.6s;
+}
+.buy{
+    
+    width: 80px;
+    top: 1%;
+    font-size: 45px;
+    color: aliceblue;
+    right: 2%;
+    float: left;
+    position: absolute;
+    padding: 2% 0; 
+    
+}
+.logo{
+    
+  width: 100px;
+  height: 90px;
+  top: 3%;
+  left: 3%;
+
+  right: 2%;
+  position: absolute;
+  
+}
+.buy:hover{
+  box-shadow: 4px  4px  50px rgb(20, 206, 6),
+  -4px  -4px  50px;
+  border-radius: 100%;
+  padding: 2% 0; 
+  cursor: pointer;
+  transform: scale(1.1);
+  
+}
+/* midlephoto */
+.container{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 65%;
+  background-color: rgba(240, 248, 255, 0.726);
+  box-shadow: 4px  4px  50px rgb(105, 229, 100),
+  -4px  -4px  50px;
+}
+
+img{
+  width: 40%;
+  height: 50%;
+  margin-right:2% ;
+  float: left;
+}
+.photocont{
+  fill-opacity: calc(10%);
+  border: solid 2px;
+  width: 75%;
+  height: 80%;
+  padding: 2%;
+  border-color: #000000;
+  font-size: 17px;
+  border-radius: 4px;
+  
+  background-color: rgb(64, 158, 124);
+}
+.photocont:hover{
+  margin: 0px 2px;
+}
+.navicons{
+  margin: 30px;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 25px 15px;
+  background-color: rgb(64, 158, 124);
+  z-index: 50;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #589A8D;
+    height: 9%;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    
+
+}
+footer ion-icon{
+  font-size: 35px;
+  color: aliceblue;
+  margin: auto;
+  
+}
+footer ion-icon:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+div svg {
+  font-size: 35px;
+  margin: auto;
+}
+/* homepage */
+.textholder{
+  width: 98%;
+  height: 70%;
+  background-color: rgba(240, 248, 255, 0.726);
+  margin: auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding: 60p;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+div div {
+  margin: 2%;
+  height: 80%;
+  width: 96%;
+}
+.shape1{
+  left: -20%;
+  position: absolute;
+  transform: rotate(-60deg);
+  opacity: 0.5;
+}
+.shape2{
+  left: 80%;
+  top: 15%;
+  position: absolute;
+  transform: rotate(120deg);
+  opacity: 0.5;
+}
+.hometitle{
+  color: rgb(208, 239, 190);
+  position: absolute;
+  top: 3%;
+  font-size:60px;
+}
+.color-changing {
+  animation: changeColor 2s linear infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    color: #9f1e05;
+  }
+  25% {
+    color: #005C53;
+  }
+  50% {
+    color: #9FC131;
+  }
+  75% {
+    color: #DBF227;
+  }
+  100% {
+    color: #D6D58E;
+  }
+}
+.treediv{
+
+  filter: blur(20px);
+  position: absolute;
+  right: 8%;
+  border-radius: 40px;
+  opacity: 0.8;
+  height: 60%;
+  width: 40%;
+  background-color: rgba(240, 248, 255, 0.666);
+}
+.treeimg{
+  
+  position: absolute;
+  right: 8%;
+  border-radius: 40px;
+  height: 60%;
+  width: 40%;
+  background-color: rgba(240, 248, 255, 0.516);
+  opacity: 0.8;
+}
+.zitzitoun{
+  box-shadow: 3px 3px 100px red,-3px -3px 100px rgb(64, 0, 255); 
+  border-radius: 20px;
+  height: 5%;
+  margin-bottom: 45px;
+}
+.animationcont{
+  background-color: aliceblue;
+  position: absolute;
+  height: 5%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  bottom: 10%;
+  opacity: 0.4;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+.animationmcont {
+  animation: move 5s linear infinite;
+  position: absolute;
+}
+
+@keyframes move {
+  0% {
+    left: -10%;
+  }
+  20% {
+    left: 10%;
+  }
+  50% {
+    left: 50%;
+  }
+  75% {
+    left: 75%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+.necont{
+  border: 1px solid;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: -1%;
+  top: 9%;
+
+}
+.pecont{
+  border: 1px solid;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 9%;
+  left: -1%;
+}
+.hidden{
+  display: none;
+}
+.show{
+  display : block;
+}
+
+.smallphotos{
+  width: 100%;  
+  height: 100%; 
+}
+.phototext{
+  
+  font-size:20px;
+}
+.ad{
+  position: absolute;
+  border-radius: 10%;
+  bottom: 11%;
+  padding:1% 3% ;
+  color: #000000;
+  text-decoration: none;
+  background-color: #769f05;
+}
+.ad:hover{
+  transform: scale(1.2);
+}
+.infosu{
+  width: 40%;
+  height: 60%;
+  position: absolute;
+  background-color: #035b0f;
+  border-radius: 10%;
+  top: 10%;
+  right: 5%;
+  z-index: 100;
+  font-size: 12px;
+}
+.infocont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5% 5%;
+}
+@media (min-width: 900px) {
+  body {
+      width: 80%;
+      position: absolute;
+      margin-left: 10%;
+  }
+  .photocont{
+    width: 60%;
+
+  }
+  .container{
+    width: 80%;
+  }
+  .buy{
+    z-index: 100;
+  }
+  .buy:hover{
+    transform: scale(1.2);
+  }
+  .treediv{
+    width: 10%;
+    background-color: #9f1e05;
+  }
+  .treeimg{
+    margin-top: 2%;
+    width: 30%;
+  }
+}
+
+.styled-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  
+}
+
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+div div button{
+  padding: 5%;
+
+}
+div div button:hover{
+  cursor: pointer;
+}
+.userin{
+  margin: 20% 4%;
+}
